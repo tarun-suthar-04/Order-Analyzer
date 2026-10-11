@@ -6,6 +6,8 @@ Instead of adding up every retailer's order by hand, enter the quantities in the
 
 The app also has a separate tool for analyzing Amul order spreadsheets. Choose an Excel or CSV file to see order totals by vehicle and retailer.
 
+[![Architecture diagram of tarun-suthar-04/order-analyzer](https://gitdiagram.com/tarun-suthar-04/order-analyzer/diagram.png)](https://gitdiagram.com/tarun-suthar-04/order-analyzer?utm_source=readme&utm_medium=picture)
+
 ## At a glance
 
 | If you need to… | Use… |
