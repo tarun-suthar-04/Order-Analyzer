@@ -1,5 +1,7 @@
 # Order Analyzer
 
+[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/tarun-suthar-04/order-analyzer?utm_source=readme&utm_medium=badge)
+
 Order Analyzer is an Android app that helps a small shop organize retailer orders and figure out what products to prepare or deliver each day.
 
 Instead of adding up every retailer's order by hand, enter the quantities in the app and it totals the demand by product. For example, it can show how many bread loaves or milk packets are needed across all retailers. You can also review the bill in the app, but the copy/share production list contains quantities only.
