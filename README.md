@@ -1,18 +1,22 @@
 # Order Analyzer
 
-Order Analyzer is an Android app for managing a shop's daily retailer orders and analyzing Amul Milk Orders spreadsheets. Daily Product Orders are saved locally in SQLite and can sync through Firebase for a shared shop account. The app keeps working offline; Firestore sync resumes when the device reconnects. Amul spreadsheet analysis is a separate, local-only workflow.
+Order Analyzer is an Android app that helps a small shop organize retailer orders and figure out what products to prepare or deliver each day.
 
-> This repository contains the app source code. Each developer must connect their own Firebase project configuration before using shop login and cloud sync. No Firebase credentials or real customer/order sample data are included.
+Instead of adding up every retailer's order by hand, enter the quantities in the app and it totals the demand by product. For example, it can show how many bread loaves or milk packets are needed across all retailers. You can also review the bill in the app, but the copy/share production list contains quantities only.
 
-## What you can do
+The app also has a separate tool for analyzing Amul order spreadsheets. Choose an Excel or CSV file to see order totals by vehicle and retailer.
 
-- Maintain products and retailers; create, edit, and review daily retailer orders.
-- Check product quantities, order history, and billing in the app.
-- Copy/share a production list with product names and quantities only (no prices or bill amounts).
-- Use one shop account on multiple devices and see sync status.
-- Analyze `.xlsx`, `.xls`, and `.csv` Amul order files; search/sort summaries and export CSV.
+## At a glance
 
-Only today's and yesterday's daily orders are retained. Older orders are automatically removed; product and retailer master records are kept. Amul analysis remains separate from Firebase Daily Product Orders.
+| If you need to… | Use… |
+|---|---|
+| Record orders from your retailers and total product quantities | **Daily Product Orders** |
+| Review bills, order history, and pending retailers | **Daily Product Orders** |
+| Analyze an existing Amul Excel or CSV order file | **Amul Milk Orders** |
+
+Daily Product Orders are stored on the phone and can sync between phones signed into the same shop account. The app supports offline use; queued cloud changes can sync after the phone reconnects. Only today's and yesterday's orders are kept. Older orders are removed automatically, while products and retailers remain. Amul spreadsheet analysis is separate from shop-account sync.
+
+> This repository contains the Android app source code. To use shop login and cloud sync, configure your own Firebase project as described below. Firebase credentials and the local spreadsheet—which may contain retailer/order data—are not included in the repository.
 
 ## Quick start
 
