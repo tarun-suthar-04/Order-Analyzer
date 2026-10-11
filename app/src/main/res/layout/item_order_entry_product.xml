@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_product_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_item_product_normal">
+
+    <TextView
+        android:id="@+id/tv_product_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/bg_pill_today"
+        android:gravity="center"
+        android:text="📦"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold Coin"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="₹15.00"
+            android:textColor="@color/brand_blue"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-bold"/>
+
+        <TextView
+            android:id="@+id/tv_pref_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="★ Preferred"
+            android:textColor="@color/brand_blue"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- Quantity Controls: [-] [ 0 ] [+] -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_minus"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_quantity_box"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="Minus"
+            app:tint="@color/text_primary"/>
+
+        <EditText
+            android:id="@+id/et_quantity"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_quantity_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-bold"/>
+
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_quantity_box"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="Plus"
+            app:tint="@color/text_primary"/>
+    </LinearLayout>
+</LinearLayout>

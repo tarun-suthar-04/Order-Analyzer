@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_retailer.xml
+    One row in the Retailer Summary RecyclerView.
+    Layout: retailer name (start, weight=1) + total value (end, bold primary color)
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#F7F9FD"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="5dp">
+
+    <!-- Retailer name (takes remaining width) -->
+    <TextView
+        android:id="@+id/tv_retailer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textColor="@color/text_primary"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Retailer Name" />
+
+    <!-- Total order — right aligned, accent colored -->
+    <TextView
+        android:id="@+id/tv_retailer_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/primary"
+        android:fontFamily="sans-serif-medium"
+        android:text="0" />
+
+</LinearLayout>

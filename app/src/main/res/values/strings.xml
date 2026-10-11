@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Order Manager</string>
+
+    <!-- Home screen -->
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_subtitle">Choose an option to continue</string>
+    <string name="amul_milk_orders">Amul Milk Orders</string>
+    <string name="amul_milk_subtitle">Upload Excel file and get instant analysis</string>
+    <string name="daily_product_orders">Daily Product Orders</string>
+    <string name="daily_product_subtitle">Add retailer orders, track product totals</string>
+
+    <!-- Amul Milk Orders screen (existing strings) -->
+    <string name="upload_file">Upload File</string>
+    <string name="vehicle_summary">Vehicle Summary</string>
+    <string name="retailer_summary">Retailer Summary</string>
+    <string name="raw_data">Raw Data Preview</string>
+    <string name="search_hint">Search retailer…</string>
+    <string name="no_data">No data loaded yet.\nTap the button below to upload a file.</string>
+    <string name="export">Export CSV</string>
+    <string name="sort">Sort ↓</string>
+</resources>

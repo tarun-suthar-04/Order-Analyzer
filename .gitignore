@@ -1,0 +1,28 @@
+# Local Android SDK configuration
+local.properties
+
+# Firebase project configuration contains project-specific API configuration
+app/google-services.json
+
+# Included local workbook may contain real retailer/order data
+/1773752191.csv
+
+# Gradle/Android Studio generated state
+.gradle/
+**/build/
+.idea/
+.vscode/
+*.iml
+.externalNativeBuild/
+.cxx/
+
+# Local signing material and environment files
+*.jks
+*.keystore
+keystore.properties
+.env
+.env.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

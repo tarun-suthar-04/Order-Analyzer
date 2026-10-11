@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // A shop is owned by the Firebase Auth UID used as its document ID.
+    // This covers profile, products, retailers, and dailyOrders descendants.
+    match /shops/{shopId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == shopId;
+    }
+  }
+}
